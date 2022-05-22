@@ -1,0 +1,138 @@
+.footer{
+  width: 100%;
+  background-color: #060c1c;
+  padding-top: 5rem;
+  &__row__top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.3rem;
+  }
+  &__logo{
+    width: 21.2rem;
+    height: 5.7rem;
+    &__img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__arrow{
+    text-decoration: none;
+    &__icon{
+      font-size: 3rem;
+      cursor: pointer;
+      color: #808594;
+      transition: all .4s;
+      &:hover{
+        transform: scaleY(1.5);
+        color: #9b9fab;
+      }
+    }
+  }
+  &__row__bottom{
+    width: 100%;
+    display: flex;justify-content: space-between;
+    align-items: flex-end;
+    height: max-content;
+    margin-bottom: 5rem;
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 11.2rem;
+    list-style-type: none;
+    &__list{
+      margin-right: 6rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__form{
+    width: max-content;
+    height: max-content;
+    margin-right: 10rem;
+    &__title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.6rem;
+      line-height: 4rem;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+    &__desc{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.8rem;
+      line-height: 3.1rem;
+      color: #FFFFFF;
+      padding: 1rem 2rem;
+      border-left: .3rem solid #1BDC77;
+      margin-bottom: 2rem;
+    }
+    &__block{
+      width: 48rem;
+      display: flex;
+    }
+    &__input{
+      border-radius: 3.3rem;
+      width: 40rem;
+      background-color: #161b2e;
+      padding: 2.1rem 4rem;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #808594;
+      margin-right: 1rem;
+      border: 0;
+      outline: 0;
+      &::placeholder{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #808594;
+      }
+    }
+    &__btn{
+      width: 6.4rem;
+      height: 6.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #21305c;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+      border-radius: 50%;
+      transition: all .4s;
+      &__icon{
+        width: 2.5rem; //for image
+        height: 2.5rem;
+        color: #ffffff;
+        transition: all .4s;
+      }
+      &:hover{
+        background-color: #233F90;
+        .footer__form__btn__icon{
+          transform: translate(.5rem, -.5rem);
+        }
+      }
+    }
+  }
+  &__copy{
+    font-family: $syne;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #808594;
+    padding: 2.7rem 0;
+    border-top: .1rem solid #808594;
+  }
+}

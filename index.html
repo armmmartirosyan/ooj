@@ -1,0 +1,469 @@
+<!-- https://www.figma.com/file/m7Xy9PyQVyDFIp3VI0TACv/OOJ?node-id=907%3A85413 --Figma-- -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOJ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="login--wrapper hide">
+    <div class="login hide">
+        <div class="login__container">
+            <div class="login__close">
+                <div class="login__close__line"></div>
+                <div class="login__close__line"></div>
+            </div>
+            <div class="login__logo">
+                <a href="index.html" class="login__logo__link">
+                    <img src="img/icons/logo-login.svg" alt="OOJ" class="login__logo__img">
+                </a>
+            </div>
+            <div class="login__account">
+                <p class="login__account__text">Войдите в Ваш аккаунт через соцсети</p>
+                <div class="login__account__row">
+                    <a href="#" class="login__account__link">
+                        <div class="login__account__box">
+                            <img src="img/icons/google.svg" alt="google" class="login__account__img">
+                        </div>
+                    </a>
+                    <a href="#" class="login__account__link">
+                        <div class="login__account__box">
+                            <img src="img/icons/twitter.svg" alt="twitter" class="login__account__img">
+                        </div>
+                    </a>
+                    <a href="#" class="login__account__link">
+                        <div class="login__account__box">
+                            <img src="img/icons/linkedin-in.svg" alt="linkedIn" class="login__account__img">
+                        </div>
+                    </a>
+                    <a href="#" class="login__account__link">
+                        <div class="login__account__box">
+                            <img src="img/icons/github-filled.svg" alt="gitHub" class="login__account__img">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="login__or">
+                <span class="login__or__text">или</span>
+            </div>
+            <form action="#" class="login__form">
+                <label for="username" class="login__form__label">E-mail или Имя пользователя</label>
+                <input type="text" class="login__form__input username" id="username" placeholder="Напишите свой E-mail">
+                <label for="password" class="login__form__label">Пароль</label>
+                <div class="login__form__input__password-box">
+                    <input type="password" class="login__form__input password" id="password" placeholder="Введите пароль">
+                    <img src="img/icons/eye.svg" alt="Eye" class="login__form__input__password-img" id="password-visible">
+                </div>
+                <div class="login__form__box">
+                    <input type="checkbox" class="login__form__check" id="login-check">
+                    <label class="login__form__check__visual" for="login-check">
+                        <span class="login__form__check__visual__first"></span>
+                        <span class="login__form__check__visual__second"></span>
+                    </label>
+                    <label for="login-check" class="login__form__check-label">Запомнить логин и пароль</label>
+                </div>
+                <button class="login__form__submit" id="login-submit">Войти в аккаунт</button>
+            </form>
+            <p class="login__registration">У Вас еще нет аккаунта? <a href="#" class="login__registration__link">Регистрация</a></p>
+        </div>
+    </div>
+</div>
+    <div class="wrapper">
+        <header class="header" data-aos="zoom-in">
+            <div class="container">
+                <figure class="header__logo">
+                    <a href="index.html" class="header__logo__link"><img src="img/icons/logo-ooj.svg" alt="OOJ" class="header__logo__img"></a>
+                </figure>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu__list"><a href="#" class="header__menu__link btn-small">Главная</a></li>
+                        <li class="header__menu__list"><a href="#" class="header__menu__link btn-small">Магазин</a></li>
+                        <li class="header__menu__list"><a href="#" class="header__menu__link btn-small">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="header__tools">
+                    <a href="#" class="header__tools__item">
+                        <img src="img/icons/bag.svg" alt="Bag" class="header__tools__img">
+                    </a>
+                    <a href="#" class="header__tools__item">
+                        <img src="img/icons/link.svg" alt="Link" class="header__tools__img">
+                    </a>
+                    <a href="#" class="header__tools__item btn-border" id="log-in">log in</a>
+                    <div class="header__nav__btn">
+                        <div class="header__nav__btn__line"></div>
+                        <div class="header__nav__btn__line"></div>
+                        <div class="header__nav__btn__line"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main" id="top">
+            <div class="banner" data-aos="fade-up">
+                <div class="container">
+                    <article class="banner__text">
+                        <h2 class="banner__text__title">Лучший способ предсказать будущее <span class="green">- изобрести его</span></h2>
+                        <p class="banner__text__desc">Web-студия OOJ — лучшие решения для вашего бизнеса по всем параметрам</p>
+                        <a href="#" class="banner__text__link btn-border-medium">Связаться с нами</a>
+                    </article>
+                    <div class="owl-carousel owl-theme banner__slider">
+                        <article class="item banner__slider__item">
+                            <div class="banner__slider__box__big">
+                                <div class="banner__slider__box__middle">
+                                    <figure class="banner__slider__box">
+                                        <img src="img/icons/icon-blockchain-1.svg" alt="Blockchain" class="banner__slider__img">
+                                    </figure>
+                                </div>
+                            </div>
+                            <h2 class="banner__slider__title">технологии <span class="green">blockchain</span> <span class="small">Разработка</span></h2>
+                            <p class="banner__slider__desc">Преимущества в любой отрасли, где необходимо доверие к партнерам и проводимым операциям</p>
+                        </article>
+                        <article class="item banner__slider__item">
+                            <div class="banner__slider__box__big">
+                                <div class="banner__slider__box__middle">
+                                    <figure class="banner__slider__box">
+                                        <img src="img/icons/icons-mobileapp-1.svg" alt="Mobile app" class="banner__slider__img">
+                                    </figure>
+                                </div>
+                            </div>
+                            <h2 class="banner__slider__title">Мобильные Приложения <span class="small">Разработка</span></h2>
+                            <p class="banner__slider__desc">Для бизнеса и досуга под разные платформы: iOS, Android, Windows Phone и другие.</p>
+                        </article>
+                        <article class="item banner__slider__item">
+                            <div class="banner__slider__box__big">
+                                <div class="banner__slider__box__middle">
+                                    <figure class="banner__slider__box">
+                                        <img src="img/icons/icons-seo-1.svg" alt="SEO" class="banner__slider__img">
+                                    </figure>
+                                </div>
+                            </div>
+                            <h2 class="banner__slider__title">SEO - Продвижение <span class="small">Сайта</span></h2>
+                            <p class="banner__slider__desc">Для бизнеса и досуга под разные платформы: iOS, Android, Windows Phone и другие.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="banner__diagram">
+                    <img src="img/posts/diagram.svg" alt="Diagram" class="banner__diagram__img">
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="container">
+                    <article class="portfolio__text"
+                             data-aos="fade-right">
+                        <h1 class="portfolio__text__title">Веб-разработка. <span class="bold">Портфолио</span></h1>
+                        <p class="portfolio__text__desc">Идеи. Концепт. Стратегия. Разработка.</p>
+                        <div class="portfolio__text__list">
+                            <div class="portfolio__text__list__item">
+                                <img src="img/icons/txt.svg" alt="Check" class="portfolio__text__icon">
+                                <p class="portfolio__text__text">Мы предоставляем широкий спектр услуг в области веб-разработки и воплощаем в жизнь идеи клиентов.</p>
+                            </div>
+                            <div class="portfolio__text__list__item">
+                                <img src="img/icons/txt.svg" alt="Check" class="portfolio__text__icon">
+                                <p class="portfolio__text__text">Работая над проектом, мы уделяем особое внимание деталям и стремимся к тому, чтобы созданный сайт был красивым, функциональным и удобным.</p>
+                            </div>
+                            <div class="portfolio__text__list__item">
+                                <img src="img/icons/txt.svg" alt="Check" class="portfolio__text__icon">
+                                <p class="portfolio__text__text">Ознакомьтесь с нашим портфолио и посмотрите, что мы можем предложить вам от лендингов на популярных CMS до абсолютно индивидуальных решений с надежным и защищенным ядром.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="portfolio__link btn-border-large">Behance</a>
+                    </article>
+                    <figure class="portfolio__photo"
+                            data-aos="fade-down-left">
+                        <img src="img/posts/phone.svg" alt="Phone OOJ" class="portfolio__photo__img">
+                    </figure>
+                </div>
+            </div>
+            <section class="cooperation">
+                <div class="container">
+                    <h2 class="cooperation__title"
+                        data-aos="fade-down">
+                        <span class="bold">Безупречное</span> сотрудничество
+                    </h2>
+                    <div class="cooperation__row"
+                         data-aos="fade-up">
+                        <article class="cooperation__item">
+                            <div class="cooperation__item__box">
+                                <div class="cooperation__item__box__middle">
+                                    <div class="cooperation__item__box__small">
+                                        <img src="img/icons/icons-done.svg" alt="Done" class="cooperation__item__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="cooperation__item__title">Решение задач</h3>
+                            <p class="cooperation__item__desc">Как Веб-студия мы решаем практически любые задачи и не останавливаемся на достигнутом</p>
+                        </article>
+                        <article class="cooperation__item">
+                            <div class="cooperation__item__box">
+                                <div class="cooperation__item__box__middle">
+                                    <div class="cooperation__item__box__small">
+                                        <img src="img/icons/icons-skills.svg" alt="Skills" class="cooperation__item__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="cooperation__item__title">Новые навыки</h3>
+                            <p class="cooperation__item__desc">В результате освоения новых навыков наша увлеченность веб-разработкой с годами только растет</p>
+                        </article>
+                        <article class="cooperation__item">
+                            <div class="cooperation__item__box">
+                                <div class="cooperation__item__box__middle">
+                                    <div class="cooperation__item__box__small">
+                                        <img src="img/icons/icons-autom.svg" alt="Autom" class="cooperation__item__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="cooperation__item__title">Инновации</h3>
+                            <p class="cooperation__item__desc">С 2017 года мы помогаем нашим клиентам  добиваться успеха и побеждать в конкурентной борьбе</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="future">
+                <h2 class="future__title"
+                    data-aos="fade-down">
+                    Веб-разработка <span class="bold">будущего</span> для вашего <span class="bold">будущего</span>
+                </h2>
+                <div class="container">
+                    <figure class="future__box"
+                            data-aos="fade-right">
+                        <img src="img/posts/item-tablet.svg" alt="Tablet" class="future__img">
+                    </figure>
+                    <article class="future__item"
+                             data-aos="fade-left">
+                        <h3 class="future__item__title">Графический дизайн</h3>
+                        <p class="future__item__desc">Фантазия безгранична</p>
+                        <div class="future__item__text__box">
+                            <p class="future__item__text">С первых дней работы компании «Веб студия» Графический дизайн — один из самых востребованных навыков наших сотрудников.</p>
+                            <p class="future__item__text">Без этого навыка не обойтись, когда нужно заслужить доверие клиента и добиться, чтобы конечный продукт безупречно работал и отлично выглядел.</p>
+                            <p class="future__item__text">Обширный опыт оказания услуг в такой сфере, как Графический дизайн, позволяет нам учитывать все требования и пожелания клиентов.</p>
+                        </div>
+                        <a href="#" class="future__item__link btn-border-medium">Связаться с нами</a>
+                    </article>
+                </div>
+            </section>
+            <section class="service">
+                <h2 class="service__title"
+                    data-aos="fade-down">
+                    <span class="bold">Сервис</span> - которого вы достойны
+                </h2>
+                <div class="container">
+                    <article class="service__item"
+                             data-aos="fade-right">
+                        <h3 class="service__item__title">Программирование</h3>
+                        <p class="service__item__desc">Превосходя ожидания</p>
+                        <div class="service__item__text__box">
+                            <p class="service__item__text">Если вы хотите заинтересовать целевую аудиторию и завладеть ее вниманием, без продуманного и сильного пользовательского интерфейса не обойтись.</p>
+                            <p class="service__item__text">Такая услуга в нашей компании, как Программирование, может сыграть важную роль в успешном продвижении вашего бренда и бизнеса.</p>
+                            <p class="service__item__text">От эскиза и до конечного продукта мы всегда придерживаемся основного замысла заказчика, используя наши дизайнерские решения и ноу-хау для его идеального воплощения.</p>
+                        </div>
+                        <a href="#" class="service__item__link btn-border-medium">Связаться с нами</a>
+                    </article>
+                    <figure class="service__box"
+                            data-aos="fade-left">
+                        <img src="img/posts/item-desktop.png" alt="Notebook" class="service__img">
+                    </figure>
+                </div>
+            </section>
+            <section class="concept">
+                <h2 class="concept__title"
+                    data-aos="fade-down">
+                    Веб-разработка. <span class="bold">Концепт</span>
+                </h2>
+                <div class="container"
+                     data-aos="fade-up">
+                    <article class="concept__item">
+                        <figure class="concept__item__box">
+                            <img src="img/posts/Group.svg" alt="Phone" class="concept__item__img">
+                        </figure>
+                        <div class="concept__item__inner">
+                            <h3 class="concept__item__title">Разработка концепции приложения</h3>
+                            <p class="concept__item__desc">Мы по-настоящему гордимся этим проектом, в котором нам предстояло сделать выполнение повседневных бизнес-задач клиента более простым и эффективным. Требовалась концепция, которая способствовала бы более продуктивному взаимодействию пользователей с сайтом.В тесном сотрудничестве со специалистами компании нам удалось разработать продукт, который очень понравился заказчику.</p>
+                        </div>
+                    </article>
+                    <article class="concept__item">
+                        <figure class="concept__item__box">
+                            <img src="img/posts/tabletG.svg" alt="Tablet" class="concept__item__img">
+                        </figure>
+                        <div class="concept__item__inner">
+                            <h3 class="concept__item__title">Модернизация взаимодействия с пользователем</h3>
+                            <p class="concept__item__desc">В проекте для компании «Модернизация взаимодействия с пользователем» нужно было сделать дизайн сайта максимально привлекательным без ущерба для функциональности. Благодаря обширному опыту веб-разработки нам удалось справиться с этой задачей. С гордостью можем сказать, что конечный продукт получился превосходным.</p>
+                        </div>
+                    </article>
+                    <article class="concept__item">
+                        <figure class="concept__item__box">
+                            <img src="img/posts/descktop.svg" alt="Desktop" class="concept__item__img">
+                        </figure>
+                        <div class="concept__item__inner">
+                            <h3 class="concept__item__title">Анимация для лендинга</h3>
+                            <p class="concept__item__desc">В компании «Веб студия OOJ by Artyom Ragozin» используется индивидуальный подход к каждому проекту. Создавая сайт, мы стремимся воплотить основную идею клиента, используя новейшие технологии в области веб-разработки. Этот проект наглядно демонстрирует, как мы учитываем интересы заказчика при создании уникальных визуальных элементов и интерактивных средств.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="currency">
+                <div class="container">
+                    <h2 class="currency__title"
+                        data-aos="fade-down">
+                        <span class="bold">Увеличивайте прибыль</span> отслеживая свои <span class="bold">вложения</span>
+                    </h2>
+                    <div class="currency__table">
+                        <div class="currency__head">
+                            <div class="currency__head__text price">Price</div>
+                            <div class="currency__head__text">Volume (24h)</div>
+                            <div class="currency__head__text">Change (24h)</div>
+                            <div class="currency__head__text">Change (7d)</div>
+                        </div>
+                        <div class="currency__line"
+                             data-aos="fade-left">
+                            <figure class="currency__line__item img">
+                                <img src="img/icons/Vector.svg" alt="Bitcoin" class="currency__line__item__img">
+                                <figcaption class="currency__line__item__cap">
+                                    <p class="currency__line__item__text__title">BTC</p>
+                                    <p class="currency__line__item__text">Bitcoin</p>
+                                </figcaption>
+                            </figure>
+                            <div class="currency__line__item price"><p class="currency__line__item__num">$6750</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num">$3420214</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num up">+7.3%</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num up">+7.3%</p></div>
+                        </div>
+                        <div class="currency__line"
+                             data-aos="fade-left">
+                            <figure class="currency__line__item img">
+                                <img src="img/icons/eth.svg" alt="Bitcoin" class="currency__line__item__img">
+                                <figcaption class="currency__line__item__cap">
+                                    <p class="currency__line__item__text__title">ETH</p>
+                                    <p class="currency__line__item__text">Ethereum</p>
+                                </figcaption>
+                            </figure>
+                            <div class="currency__line__item price"><p class="currency__line__item__num">$156.83</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num">$1812350</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num down">-0.9%</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num down">-0.9%</p></div>
+                        </div>
+                        <div class="currency__line"
+                             data-aos="fade-left">
+                            <figure class="currency__line__item img">
+                                <img src="img/icons/ltc.svg" alt="Bitcoin" class="currency__line__item__img">
+                                <figcaption class="currency__line__item__cap">
+                                    <p class="currency__line__item__text__title">LTC</p>
+                                    <p class="currency__line__item__text">Litecoin</p>
+                                </figcaption>
+                            </figure>
+                            <div class="currency__line__item price"><p class="currency__line__item__num">$8535</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num">$5820399</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num up">+8.2%</p></div>
+                            <div class="currency__line__item"><p class="currency__line__item__num up">+8.2%</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="currency__diagram">
+                    <img src="img/icons/diagram-second.svg" alt="Diagram" class="currency__diagram__img">
+                </div>
+            </section>
+            <div class="contact">
+                <div class="container">
+                    <div class="contact__item contact__info"
+                         data-aos="fade-up">
+                        <p class="contact__title">Контакты</p>
+                        <div class="contact__info__block">
+                            <a href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4021702,30.3926086,11z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234?hl=ru" class="contact__info__link" target="_blank"><i class="fa-solid fa-location-dot contact__info__link__icon"></i>Kiev, Ukraine</a>
+                            <a href="mailto:Mr.deymon@icloud.com" class="contact__info__link"><i class="fa-solid fa-envelope contact__info__link__icon"></i>Mr.deymon@icloud.com</a>
+                            <a href="https://www.google.com/search?q=artem+kavalskiy&rlz=1C1SQJL_ruAM870AM870&oq=artem+kavals&aqs=chrome.3.69i57j33i160l4.9032j0j7&sourceid=chrome&ie=UTF-8" class="contact__info__link" target="_blank"><i class="fa-solid fa-link contact__info__link__icon"></i>Artem Kovalskiy</a>
+                        </div>
+                    </div>
+                    <div class="contact__item"
+                         data-aos="fade-left">
+                        <p class="contact__item__title">Рассчитать проект</p>
+                        <p class="contact__item__desc">Готовы обсудить любой проект.</p>
+                        <p class="contact__item__desc">Есть идеи или готовое ТЗ по проекту - отправьте его нам!</p>
+                        <form action="#" class="contact__form">
+                            <div class="contact__form__input__block">
+                                <input type="text" class="contact__form__input" placeholder="Ваше имя*">
+                                <input type="number" class="contact__form__input" placeholder="Телефон*">
+                                <input type="text" class="contact__form__input" placeholder="E-mail*">
+                            </div>
+                            <div class="contact__form__file__block">
+                                <input type="file" class="contact__form__file" id="file">
+                                <label for="file" class="contact__form__file__visual">
+                                    <img src="img/icons/download.svg" alt="Download" class="contact__form__file__visual__img">
+                                    Выбрать файл
+                                </label>
+                                <label for="file" class="contact__form__file__text">Перетащите файл в данную область или выберите файл с компьютера</label>
+                            </div>
+                            <textarea class="contact__form__area" placeholder="Опишите в двух словах Ваш проект"></textarea>
+                            <div class="contact__form__block">
+                                <input type="checkbox" class="contact__form__check" id="contact__form__checkbox">
+                                <label class="contact__form__check__visual" for="contact__form__checkbox">
+                                    <span class="contact__form__check__visual__first"></span>
+                                    <span class="contact__form__check__visual__second"></span>
+                                </label>
+                                <label for="contact__form__checkbox" class="contact__form__check__label">Я согласен с условиями обработки персональных данных</label>
+                            </div>
+                            <button class="contact__form__btn btn-blue">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"
+                data-aos="fade-up">
+            <div class="container">
+                <div class="footer__row__top">
+                    <figure class="footer__logo">
+                        <a href="index.html" class="footer__logo__link"><img src="img/icons/logo-ooj.svg" alt="OOJ" class="footer__logo__img"></a>
+                    </figure>
+                    <a href="#top" class="footer__arrow"><i class="fa-solid fa-arrow-up-long footer__arrow__icon"></i></a>
+                </div>
+                <div class="footer__row__bottom">
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">главная страница</a></li>
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">Магазин</a></li>
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">блог</a></li>
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">Личный кабинет</a></li>
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">Корзина</a></li>
+                            <li class="footer__menu__list"><a href="#" class="footer__menu__link btn-small">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__form">
+                        <p class="footer__form__title">Форма подписки</p>
+                        <p class="footer__form__desc">Новости и акционные предложения</p>
+                        <form action="#" class="footer__form__block">
+                            <input type="text" id="mail" class="footer__form__input" placeholder="Ваш Email:">
+                            <button class="footer__form__btn"><img src="img/icons/send.svg" alt="Send" class="footer__form__btn__icon"></button>
+                        </form>
+                    </div>
+                </div>
+                <p class="footer__copy">&copy;2017-2021 Веб студия OOJ.ru - Все права защищены</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!-- https://www.figma.com/file/m7Xy9PyQVyDFIp3VI0TACv/OOJ?node-id=907%3A85413 --Figma-- -->

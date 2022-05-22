@@ -1,0 +1,11 @@
+/*@keyframes diagram {
+  0%{background-position: 0 center;}
+  50%{background-position: 50% center;}
+  100%{background-position: 0 center;}
+}*/
+
+@keyframes shadow-icon {
+  0%{box-shadow: inset 0 0 0 0 #1bdc77;}
+  50%{box-shadow: inset 0 0 1rem 0.05rem #1bdc77;}
+  100%{box-shadow: inset 0 0 0 0 #1bdc77;}
+}

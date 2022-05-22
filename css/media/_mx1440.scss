@@ -1,0 +1,48 @@
+html{
+  font-size: calc(100vw / (1200/10));
+}
+.container {
+  max-width: 97.6rem;
+}
+.portfolio__photo {
+  right: -5rem;
+}
+/*//--------------------------Cooperation--------------------------
+.cooperation {
+  & > .container {
+    max-width: 81.4rem;
+  }
+}*/
+//--------------------------future--------------------------
+.future{
+  &__box{
+    left: -35.5rem;
+  }
+}
+//--------------------------currency--------------------------
+.currency{
+  & > .container{
+    max-width: 81.4rem;
+  }
+  &__diagram{
+    height: 25rem;
+  }
+}
+//--------------------------contact--------------------------
+.contact{
+  &__item{
+    width: 56.3rem;
+    &.contact__info{
+      width: calc(100% - 56.3rem);
+    }
+  }
+}
+//--------------------------footer--------------------------
+.footer{
+  & > .container{
+    padding: 0 2rem;
+  }
+  &__form {
+    margin-right: 4rem;
+  }
+}

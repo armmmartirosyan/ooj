@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: .69444vw;
+}
+body{
+  font-size: 1.4rem;
+  color: #000;
+  scroll-behavior: smooth;
+  font-family: 'TT Mussels', sans-serif, Arial;
+  background-color: #141927;
+  &.noScroll{
+    overflow: hidden;
+  }
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #141927;
+}
+.main{
+  padding-top: 9rem;
+}
+.container{
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.green{
+  color: #1bdc77;
+}
+.small{
+  font-size: 2.6rem;
+}
+.bold{
+  font-weight: 600;
+}

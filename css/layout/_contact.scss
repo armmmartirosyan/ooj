@@ -1,0 +1,243 @@
+.contact{
+  width: 100%;
+  padding: 5rem 0 6rem;
+  background-color: #161b2e;
+  & > .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info__block{
+    display: flex;
+    flex-direction: column;
+  }
+  &__info__link{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #808594;
+    margin-bottom: 3.2rem;
+    text-decoration: none;
+    &__icon{
+      height: 2.6rem;
+      width: 2.6rem;
+      margin-right: 2rem;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__item{
+    width: 67.5rem;
+    &.contact__info{
+      display: block;
+      background-image: url("#{$img-path}icons/btc.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      width: calc(100% - 72.5rem);
+      padding-left: 5rem;
+    }
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: $fz-title;
+      line-height: $lh-title;
+      color: #FFFFFF;
+      margin-bottom: 3rem;
+    }
+    &__desc{
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: #FFFFFF;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 7rem;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+  }
+  &__form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.4rem;
+    justify-content: space-between;
+    & input::-webkit-outer-spin-button,
+    & input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    & input[type='number'] {
+      -moz-appearance: textfield;
+    }
+    &__input__block{
+      width: 48%;
+    }
+    &__input{
+      width: 100%;
+      background-color: #10131f;
+      border-radius: 2.5rem;
+      outline: 0;
+      border: 0;
+      margin-bottom: 1rem;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #808594;
+      padding: 2.1rem 4rem;
+      &::placeholder{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #808594;
+      }
+    }
+    &__file__block{
+      width: 48%;
+      height: 21.3rem;
+      border: .1rem dashed #808594;
+      border-radius: 2.5rem;
+      background-color: #10131f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__file{
+      display: none;
+      &__visual{
+        border: .1rem solid #FFFFFF;
+        border-radius: .4rem;
+        outline: 0;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 130%;
+        color: #FFFFFF;
+        padding: 1.3rem 2rem;
+        margin-bottom: 1.4rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: #10131f;
+        transition: all .4s;
+        &__img{
+          width: 1.6rem;
+          height: 1.8rem;
+          margin-right: .6rem;
+        }
+        &:hover{
+          background-color: #222738;
+        }
+      }
+      &__text{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .9rem;
+        line-height: 1.1rem;
+        color: #808594;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 17.2rem;
+        width: 100%;
+      }
+    }
+    &__area{
+      width: 100%;
+      height: 20rem;
+      padding: 2.3rem 4rem;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: #808594;
+      background-color: #10131f;
+      outline: 0;
+      border: 0;
+      border-radius: 2.5rem;
+      margin-bottom: 2.2rem;
+      resize: none;
+      &::placeholder{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #808594;
+      }
+    }
+    &__block{
+      width: 100%;
+      margin-bottom: 2.3rem;
+      display: flex;
+      align-items: center;
+    }
+    &__check{
+      display: none;
+      &:checked{
+        & ~ .contact__form__check__visual > .contact__form__check__visual__first{
+          width: .9rem;
+        }
+        & ~ .contact__form__check__visual > .contact__form__check__visual__second{
+          width: 1.8rem;
+          transform: rotateZ(-40deg);
+        }
+      }
+      &__label{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #808594;
+      }
+      &__visual{
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: #0e121e;
+        border-radius: .4rem;
+        margin-right: 2rem;
+        position: relative;
+        cursor: pointer;
+        &__first {
+          position: absolute;
+          top: 1.5rem;
+          left: 0.2em;
+          width: 0;
+          height: 0.2rem;
+          background-color: #626777;
+          transform: rotateZ(40deg);
+          transition: all .4s;
+        }
+        &__second {
+          position: absolute;
+          top: 1.2rem;
+          left: 0.58em;
+          width: 0;
+          height: 0.2rem;
+          background-color: #626777;
+          transform: rotateZ(0deg);
+          transition: all .4s;
+        }
+      }
+    }
+    &__btn{
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}

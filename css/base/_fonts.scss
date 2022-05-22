@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'TT Mussels';
+  src: url('#{$font-path}TTMussels-ExtraBold.eot');
+  src: url('#{$font-path}TTMussels-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}TTMussels-ExtraBold.woff2') format('woff2'),
+  url('#{$font-path}TTMussels-ExtraBold.woff') format('woff'),
+  url('#{$font-path}TTMussels-ExtraBold.ttf') format('truetype'),
+  url('#{$font-path}TTMussels-ExtraBold.svg#TTMussels-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Mussels';
+  src: url('#{$font-path}TTMussels-Regular.eot');
+  src: url('#{$font-path}TTMussels-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}TTMussels-Regular.woff2') format('woff2'),
+  url('#{$font-path}TTMussels-Regular.woff') format('woff'),
+  url('#{$font-path}TTMussels-Regular.ttf') format('truetype'),
+  url('#{$font-path}TTMussels-Regular.svg#TTMussels-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Mussels';
+  src: url('#{$font-path}TTMussels-Bold.eot');
+  src: url('#{$font-path}TTMussels-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}TTMussels-Bold.woff2') format('woff2'),
+  url('#{$font-path}TTMussels-Bold.woff') format('woff'),
+  url('#{$font-path}TTMussels-Bold.ttf') format('truetype'),
+  url('#{$font-path}TTMussels-Bold.svg#TTMussels-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Mussels';
+  src: url('#{$font-path}TTMussels-Medium.eot');
+  src: url('#{$font-path}TTMussels-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}TTMussels-Medium.woff2') format('woff2'),
+  url('#{$font-path}TTMussels-Medium.woff') format('woff'),
+  url('#{$font-path}TTMussels-Medium.ttf') format('truetype'),
+  url('#{$font-path}TTMussels-Medium.svg#TTMussels-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-Medium.eot');
+  src: url('#{$font-path}Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Montserrat-Medium.woff2') format('woff2'),
+  url('#{$font-path}Montserrat-Medium.woff') format('woff'),
+  url('#{$font-path}Montserrat-Medium.ttf') format('truetype'),
+  url('#{$font-path}Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-Bold.eot');
+  src: url('#{$font-path}Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Montserrat-Bold.woff2') format('woff2'),
+  url('#{$font-path}Montserrat-Bold.woff') format('woff'),
+  url('#{$font-path}Montserrat-Bold.ttf') format('truetype'),
+  url('#{$font-path}Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-ExtraBold.eot');
+  src: url('#{$font-path}Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Montserrat-ExtraBold.woff2') format('woff2'),
+  url('#{$font-path}Montserrat-ExtraBold.woff') format('woff'),
+  url('#{$font-path}Montserrat-ExtraBold.ttf') format('truetype'),
+  url('#{$font-path}Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$font-path}Montserrat-Regular.eot');
+  src: url('#{$font-path}Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Montserrat-Regular.woff2') format('woff2'),
+  url('#{$font-path}Montserrat-Regular.woff') format('woff'),
+  url('#{$font-path}Montserrat-Regular.ttf') format('truetype'),
+  url('#{$font-path}Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Syne';
+  src: url('#{$font-path}Syne-Regular.eot');
+  src: url('#{$font-path}Syne-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Syne-Regular.woff2') format('woff2'),
+  url('#{$font-path}Syne-Regular.woff') format('woff'),
+  url('#{$font-path}Syne-Regular.ttf') format('truetype'),
+  url('#{$font-path}Syne-Regular.svg#Syne-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

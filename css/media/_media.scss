@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1920px){
+  @import "mx1920";
+}
+@media only screen and (max-width: 1440px){
+  @import "mx1440";
+}
+@media only screen and (max-width: 1170px){
+  @import "mx1024";
+}
+@media only screen and (max-width: 768px){
+  @import "mx768-var";
+  @import "mx768";
+}

@@ -1,0 +1,98 @@
+.btn-small{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #808594;
+  transition: all .4s;
+  text-decoration: none;
+  &:hover{
+    color: #1BDC77;
+  }
+}
+.btn-border{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0.878rem 1.9rem;
+  border: .2rem solid #1BDC77;
+  border-radius: 3.7rem;
+  background-color: transparent;
+  transition: all .4s;
+  text-decoration: none;
+  &:hover{
+    box-shadow: 0 0 1.6rem 0 #1bdc77;
+  }
+  //click event with js
+  /*&.clocked{
+    background-color: #1bdc77;
+    box-shadow: 0 0 16px 0 #1bdc77;
+  }*/
+  &:focus{
+    background-color: #1bdc77;
+    box-shadow: 0 0 1.6rem 0 #1bdc77;
+  }
+}
+.btn-border-medium{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 2.2rem 1.8rem;
+  background-color: #0E121E;
+  border: .3rem solid #1BDC77;
+  box-shadow: 0 2.1rem 4.9rem rgba(0, 0, 0, 0.4);
+  border-radius: 5rem;
+  transition: all .4s;
+  text-decoration: none;
+  &:hover{
+    box-shadow: 0 .4rem 3.7rem rgba(27, 220, 119, 0.43), 0 2.1rem 4.9rem rgba(0, 0, 0, 0.4);
+  }
+  &:focus{
+    background-color: #1bdc77;
+    box-shadow: 0 0 1.6rem 0 #1bdc77;
+  }
+}
+.btn-border-large{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  padding: 2rem 4rem;
+  background-color: #0E121E;
+  border: .3rem solid #1BDC77;
+  box-shadow: 0 2.1rem 4.9rem rgba(0, 0, 0, 0.4);
+  border-radius: 5rem;
+  transition: all .4s;
+  text-decoration: none;
+  &:hover{
+    box-shadow: 0 .4rem 3.7rem rgba(27, 220, 119, 0.43), 0 2.1rem 4.9rem rgba(0, 0, 0, 0.4);
+  }
+  &:focus{
+    background-color: #1bdc77;
+    box-shadow: 0 0 1.6rem 0 #1bdc77;
+  }
+}
+.btn-blue{
+  font-family: 'Montserrat', sans-serif, Arial;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 2rem 4.6rem;
+  background-color: #21305C;
+  border-radius: 2.5rem;
+  transition: all .4s;
+  text-decoration: none;
+  &:hover, &:focus{
+    background-color: #233F90;
+    border-radius: 2.5rem;
+  }
+}
