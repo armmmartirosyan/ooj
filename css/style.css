@@ -11608,6 +11608,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between; }
+    .cooperation__row .owl-stage-outer {
+      overflow: unset;
+      overflow-x: clip !important; }
   .cooperation__item {
     width: 29rem; }
     .cooperation__item__box {
@@ -12131,6 +12134,11 @@ body {
     .cooperation__row {
       flex-direction: column;
       justify-content: unset; }
+      .cooperation__row .owl-dots {
+        display: none; }
+      .cooperation__row .owl-item {
+        display: flex;
+        justify-content: center; }
     .cooperation__item {
       margin: 2rem; }
       .cooperation__item__title {

@@ -95,6 +95,10 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    & .owl-stage-outer{
+      overflow: unset;
+      overflow-x: clip !important;
+    }
   }
   &__item{
     width: 29rem;

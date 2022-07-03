@@ -11,6 +11,18 @@ $('.banner__slider').owlCarousel({
     nav:true,
     items:1
 });
+$('.cooperation__row').owlCarousel({
+    loop:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        }
+    }
+});
 
 //Add classes on click header btn
 $(".header__nav__btn").on("click", function(){

@@ -186,6 +186,13 @@ html{
   &__row{
     flex-direction: column;
     justify-content: unset;
+    & .owl-dots{
+      display: none;
+    }
+    & .owl-item{
+      display: flex;
+      justify-content: center;
+    }
   }
   &__item{
     margin: 2rem;
