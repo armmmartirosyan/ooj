@@ -68,7 +68,75 @@
                     </div>
                     <button class="login__form__submit" id="login-submit">Войти в аккаунт</button>
                 </form>
-                <p class="login__registration">У Вас еще нет аккаунта? <a href="#" class="login__registration__link">Регистрация</a></p>
+                <p class="login__registration">У Вас еще нет аккаунта? <span class="login__registration__link">Регистрация</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="register--wrapper hide">
+        <div class="register hide">
+            <div class="register__container">
+                <div class="register__close">
+                    <div class="register__close__line"></div>
+                    <div class="register__close__line"></div>
+                </div>
+                <div class="register__logo">
+                    <a href="index.html" class="register__logo__link">
+                        <img src="img/icons/logo-login.svg" alt="OOJ" class="register__logo__img">
+                    </a>
+                </div>
+                <div class="register__account">
+                    <p class="register__account__text">Войдите в Ваш аккаунт через соцсети</p>
+                    <div class="register__account__row">
+                        <a href="#" class="register__account__link">
+                            <div class="register__account__box">
+                                <img src="img/icons/google.svg" alt="google" class="register__account__img">
+                            </div>
+                        </a>
+                        <a href="#" class="register__account__link">
+                            <div class="register__account__box">
+                                <img src="img/icons/twitter.svg" alt="twitter" class="register__account__img">
+                            </div>
+                        </a>
+                        <a href="#" class="register__account__link">
+                            <div class="register__account__box">
+                                <img src="img/icons/linkedin-in.svg" alt="linkedIn" class="register__account__img">
+                            </div>
+                        </a>
+                        <a href="#" class="register__account__link">
+                            <div class="register__account__box">
+                                <img src="img/icons/github-filled.svg" alt="gitHub" class="register__account__img">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="register__or">
+                    <span class="register__or__text">или</span>
+                </div>
+                <form action="#" class="register__form">
+                    <label for="username" class="register__form__label">E-mail или Имя пользователя</label>
+                    <input type="text" class="register__form__input username" id="register-username" placeholder="Напишите свой E-mail">
+                    <label for="register-password" class="register__form__label">Пароль</label>
+                    <div class="register__form__input__password-box">
+                        <input type="password" class="register__form__input password" id="register-password" placeholder="Введите пароль">
+                        <img src="img/icons/eye.svg" alt="Eye" class="register__form__input__password-img" id="register-password-visible">
+                    </div>
+                    <label for="register-password-repeat" class="register__form__label">Повторите пароль</label>
+                    <div class="register__form__input__password-box">
+                        <input type="password" class="register__form__input password" id="register-password-repeat" placeholder="Введите пароль">
+                        <img src="img/icons/eye.svg" alt="Eye" class="register__form__input__password-img" id="register-password-visible-repeat">
+                    </div>
+                    <div class="register__form__box">
+                        <input type="checkbox" class="register__form__check" id="register-check">
+                        <label class="register__form__check__visual" for="register-check">
+                            <span class="register__form__check__visual__first"></span>
+                            <span class="register__form__check__visual__second"></span>
+                        </label>
+                        <label for="register-check" class="register__form__check-label">Я хочу получать новости и акционные предложения</label>
+                    </div>
+                    <button class="register__form__submit" id="register-submit">Зарегистрироваться</button>
+                </form>
+                <p class="register__registration">У Вас уже есть аккаунт? <span class="register__registration__link">Войти</span></p>
+                <p class="register__notification">*Нажимая кнопку “Зарегистрироваться” вы соглашаетсь на обработку и хранение  персональных данных в соответсвии с политикой конфиденциальности</p>
             </div>
         </div>
     </div>

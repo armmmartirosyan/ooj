@@ -231,7 +231,7 @@
         }
       }
       &__visual{
-        width: 2.8rem;
+        min-width: 2.8rem;
         height: 2.8rem;
         background-color: #e2e6f0;
         border: .2rem solid #CDD1DC;
@@ -302,9 +302,323 @@
       color: #1565D8;
       text-decoration: none;
       transition: all .4s;
+      cursor: pointer;
       &:hover{
         color: #83a2ff;
       }
     }
+  }
+}
+//------------registration------------
+.register--wrapper{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: brightness(0.9);
+  transition: all .4s;
+  &.hide{
+    height: 0;
+    top: -100vh;
+  }
+  &.show{
+    height: 100%;
+    top: 0;
+  }
+}
+.register{
+  height: max-content;
+  border-radius: 4rem;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transition: all .4s;
+  & > *{
+    transition: all .4s;
+  }
+  &.hide{
+    width: 0;
+    opacity: 0;
+    top: -100vh;
+    & > *{
+      opacity: 0;
+    }
+  }
+  &.show{
+    width: 50rem;
+    top: 0;
+    opacity: 1;
+    & > *{
+      opacity: 1;
+    }
+  }
+  &__container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 7rem 5rem;
+  }
+  &__close{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2rem;
+    cursor: pointer;
+    &__line{
+      width: 2.5rem;
+      height: .3rem;
+      background-color: #808594;
+      transition: all .4s;
+      &:first-child{
+        transform: rotateZ(45deg);
+        position: relative;
+        top: 0.9rem;
+      }
+      &:last-child{
+        transform: rotateZ(-45deg);
+        position: relative;
+        bottom: 0.8rem;
+      }
+    }
+    &:hover{
+      & > .register__close__line{
+        background-color: #a0a4b1;
+      }
+    }
+  }
+  &__logo{
+    width: 18rem;
+    height: 5rem;
+    margin: 0 auto 1rem;
+    &__img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__account{
+    text-align: center;
+    margin-bottom: 2rem;
+    &__text{
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+      margin-bottom: 1rem;
+      color: #8692A6;
+    }
+    &__row{
+      display: flex;
+      justify-content: center;
+    }
+    &__box{
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.08);
+      border-radius: 0.6rem;
+      transition: all .4s;
+      &:hover{
+        transform: translate(0, -1rem);
+      }
+    }
+    &__link{
+      margin-right: 1.6rem;
+      &:nth-child(4n + 4){
+        margin-right: 0;
+      }
+    }
+    &__img{
+      height: 2.5rem;
+    }
+  }
+  &__or{
+    width: 100%;
+    height: .1rem;
+    background-color: #f5f5f5;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    &__text{
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: #BABABA;
+      padding: 0 2.9rem;
+      position: absolute;
+      top: -0.9rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: white;
+      width: max-content;
+    }
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    &__input__password-box{
+      width: 100%;
+      height: max-content;
+      position: relative;
+    }
+    &__input__password-img{
+      position: absolute;
+      width: 2rem;
+      height: 1.5rem;
+      right: 3rem;
+      top: calc(50% - 1.1rem);
+      cursor: pointer;
+      transition: all .4s;
+    }
+    &__label{
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #696F79;
+      margin-bottom: .8rem;
+    }
+    &__input{
+      border: .1rem solid #808594;
+      border-radius: 2.5rem;
+      width: 100%;
+      padding: 1.5rem 6rem 1.5rem 3rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      outline: 0;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: #000000;
+      &::placeholder{
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #CBCBCB;
+      }
+    }
+    &__box{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    &__check{
+      display: none;
+      &:checked{
+        & ~ .register__form__check__visual > .register__form__check__visual__first{
+          width: .9rem;
+        }
+        & ~ .register__form__check__visual > .register__form__check__visual__second{
+          width: 1.8rem;
+          transform: rotateZ(-40deg);
+        }
+      }
+      &__visual{
+        min-width: 2.8rem;
+        height: 2.8rem;
+        background-color: #e2e6f0;
+        border: .2rem solid #CDD1DC;
+        border-radius: .4rem;
+        margin-right: 2rem;
+        position: relative;
+        cursor: pointer;
+        &__first {
+          position: absolute;
+          top: 1.4rem;
+          left: 0.1em;
+          width: 0;
+          height: 0.2rem;
+          background-color: #808594;
+          transform: rotateZ(40deg);
+          transition: all .4s;
+        }
+        &__second {
+          position: absolute;
+          top: 1.1rem;
+          left: 0.48em;
+          width: 0;
+          height: 0.2rem;
+          background-color: #808594;
+          transform: rotateZ(0deg);
+          transition: all .4s;
+        }
+      }
+    }
+    &__check-label{
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      color: #696F79;
+
+    }
+    &__submit{
+      width: 100%;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: #FFFFFF;
+      padding: 1.7rem 0;
+      text-align: center;
+      background-color: #21305C;
+      border-radius: 2.5rem;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      transition: all .4s;
+      &:hover{
+        background-color: #233F90;
+      }
+    }
+  }
+  &__registration{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #696F79;
+    margin-bottom: 1rem;
+    &__link{
+      color: #1565D8;
+      text-decoration: none;
+      transition: all .4s;
+      cursor: pointer;
+      &:hover{
+        color: #83a2ff;
+      }
+    }
+  }
+  &__notification{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 135.51%;
+    color: #808594;
+    opacity: 0.6;
+    text-align: left;
   }
 }

@@ -46,3 +46,27 @@ html{
     margin-right: 4rem;
   }
 }
+//--------------------------login--------------------------
+.login{
+  &__container{
+    padding: 5rem 7rem 6rem;
+  }
+}
+//--------------------------registration--------------------------
+.register{
+  &__container{
+    padding: 3rem 7rem 4rem;
+  }
+  &__account{
+    &__box{
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &__form{
+    &__label{
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
